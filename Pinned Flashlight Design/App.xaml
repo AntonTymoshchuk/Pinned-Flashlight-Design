@@ -1,0 +1,16 @@
+﻿<Application x:Class="Pinned_Flashlight_Design.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Pinned_Flashlight_Design"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="PinnedFlashlight" TargetType="Button">
+            <Border Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"
+                    Background="{TemplateBinding Background}" BorderThickness="1"
+                    Loaded="PinnedFlashlightButton_Loaded"
+                    MouseMove="PinnedFlashlightButton_MouseMove">
+                <ContentPresenter/>
+            </Border>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>
